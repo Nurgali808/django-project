@@ -1,0 +1,12 @@
+{% extends 'clothes/base.html' %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+<p>Content of main page</p>
+<ul>
+    {% for p in posts %}
+    <li>{{p.}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
